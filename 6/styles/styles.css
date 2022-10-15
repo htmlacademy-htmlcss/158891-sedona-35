@@ -252,9 +252,10 @@ line-height: 36px;
 /*filter*/
 
 .catalog-filter-title {
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .catalog-filter-item {
@@ -315,6 +316,8 @@ line-height: 36px;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*pagination*/
@@ -346,7 +349,7 @@ line-height: 36px;
   color: #000000;
 }
 
-.newsletter-title {
+.newsletter-title-inner {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -355,7 +358,7 @@ line-height: 36px;
   color:#000000;
 }
 
-.newsletter-description {
+.newsletter-description-inner {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
