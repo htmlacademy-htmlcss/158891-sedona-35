@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -24,6 +32,28 @@ body {
 
 /*header*/
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header-logo {
+  width: 138px;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  width: 339px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -32,6 +62,10 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Hero*/
@@ -57,6 +91,33 @@ body {
   line-height: 26px;
   text-align: center;
   color:#333333;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wellcome-sedona {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.advantages-item {
+  width: 400px;
+}
+
+.advantages-item-img {
+  width: 1200px;
+
 }
 
 .advantages-title {
@@ -106,6 +167,18 @@ body {
   color:#000000;
 }
 
+.services-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-item {
+  width: 400px;
+}
+
 .services-description {
   font-weight: 400;
   font-size: 18px;
@@ -115,6 +188,12 @@ body {
 }
 
 /*search*/
+
+.hotel-search {
+  text-align: center;
+  padding: 96px 304px;
+  width: 592px;
+}
 
 .hotel-search-title {
   font-weight: 700;
@@ -142,6 +221,8 @@ body {
   background-repeat: no-repeat;
   color:#ffffff;
   background-color:#000000;
+  width: 684px;
+  padding: 96px 258px 104px;
 }
 
 .newsletter-title {
@@ -171,7 +252,27 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color:#000000;
+  display: block;
+  width: 720px;
+  margin-left: 41.5px;
 }
+.footer-social {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fotter-social-list {
+  width: 142px;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.htmlacademy-link {
+  width: 115px;
+  margin-left: 41.5px;
+}
+
 /*visually*/
 
 .visually-hidden {
@@ -347,6 +448,8 @@ line-height: 36px;
 .newsletter-inner {
   background-color: #ffffff;
   color: #000000;
+  width: 684px;
+  padding: 96px 258px 104px;
 }
 
 .newsletter-title-inner {
