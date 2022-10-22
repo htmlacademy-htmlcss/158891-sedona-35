@@ -117,7 +117,8 @@ body {
 
 .advantages-item-img {
   width: 1200px;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages-title {
@@ -221,9 +222,9 @@ body {
   background-repeat: no-repeat;
   color:#ffffff;
   background-color:#000000;
-  width: 684px;
-  padding: 96px 258px 104px;
-}
+  width: 1200px;
+  margin: 0 auto;
+ }
 
 .newsletter-title {
   font-weight: 700;
@@ -450,8 +451,8 @@ line-height: 36px;
 .newsletter-inner {
   background-color: #ffffff;
   color: #000000;
-  width: 684px;
-  padding: 96px 258px 104px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .newsletter-title-inner {
