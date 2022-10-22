@@ -323,13 +323,7 @@ line-height: 36px;
 
 /*inner*/
 
-.inner-header-title {
-  font-size: 32px;
-  line-height: 35px;
-  text-transform: uppercase;
-}
-
-.catalog-filter {
+.catalog-products-filter {
   background-image: url("../images/background/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -344,13 +338,21 @@ line-height: 36px;
   color: #ffffff
 }
 
-.inner-header-title {
+.catalog-products-filter-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
 }
 /*filter*/
+.filter-container {
+  display: flex;
+  width: 1060px;
+}
+
+.catalog-products {
+  width: 1060px;
+}
 
 .catalog-filter-title {
   font-weight: 700;
