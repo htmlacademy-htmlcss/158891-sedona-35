@@ -119,15 +119,23 @@
             <option value="popular">Сначала популярное</option>
           </select>
           <section class="catalog-view">
-            <a href="#" class="button button-current">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать одно изображение</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <ul class="catalog-view-list">
+              <li class="catalog-view-item">
+                <a href="#" class="button button-current">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="catalog-view-item">
+                <a href="#" class="button">
+                  <span class="visually-hidden">Показать одно изображение</span>
+                </a>
+              </li>
+              <li class="catalog-view-item">
+                <a href="#" class="button">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
           </section>
         </div>
         <ul class="product-list">
@@ -199,7 +207,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span class="pagination-link-none">...</span>
+            <span class="pagination-link pagination-link-none">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -211,9 +219,8 @@
     <footer class="page-footer">
       <section class="newsletter-inner">
         <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description-inner">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button newsletter-button button-big button-blue" type="submit">Подписаться</button>
@@ -222,18 +229,18 @@
       <!--footer-->
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соц. сетях</h2>
-        <ul class="fotter-social-list">
-          <li class="fotter-social-item">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="fotter-social-item">
+          <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="fotter-social-item">
+          <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>

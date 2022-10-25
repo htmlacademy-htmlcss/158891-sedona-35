@@ -43,6 +43,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .page-header-logo {
@@ -51,17 +52,29 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 339px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 268px;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
+  margin-right: 70px;
+  list-style-type: none;
+  align-items: center;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-weight: 700;
   font-size: 20px;
   background-color: #FFFFFF;
@@ -71,6 +84,11 @@ body {
   text-transform: capitalize;
 }
 
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
 .main-index {
   flex-grow: 1;
 }
@@ -78,6 +96,8 @@ body {
 /* Hero*/
 
 .hero {
+  padding-top: 51px;
+  padding-bottom: 82px;
   background-image: url("../images/background/main-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -90,6 +110,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 69px;
+  margin-bottom: 25px;
 }
 
 .city-description {
@@ -98,6 +120,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  margin-bottom: 90px;
 }
 
 .wellcome-sedona {
@@ -111,6 +135,7 @@ body {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -127,6 +152,8 @@ body {
 }
 
 .advantages-title {
+  margin-top: 103px;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -136,6 +163,8 @@ body {
 }
 
 .advanteges-description {
+  margin: 0;
+  margin-bottom: 121px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -149,6 +178,8 @@ body {
 }
 
 .advantages-title-img {
+  margin-top: 92px;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -158,6 +189,7 @@ body {
 }
 
 .advanteges-description-img {
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -166,6 +198,8 @@ body {
 }
 
 .services-title {
+  margin-top: 182px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -179,7 +213,7 @@ body {
   padding: 0;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  list-style-type: none;
 }
 
 .services-item {
@@ -187,6 +221,8 @@ body {
 }
 
 .services-description {
+  margin: 0;
+  margin-bottom: 81px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -198,11 +234,12 @@ body {
 
 .hotel-search {
   text-align: center;
-  padding: 96px 304px;
-  width: 592px;
+  margin: 96px 0;
 }
 
 .hotel-search-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -212,6 +249,8 @@ body {
 }
 
 .hotel-search-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -230,9 +269,24 @@ body {
   background-color: #000000;
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 104px;
+}
+
+.field {
+  width: 452px;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
 }
 
 .newsletter-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 96px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -242,6 +296,8 @@ body {
 }
 
 .newsletter-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -268,17 +324,28 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
-.fotter-social-list {
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   width: 142px;
-  margin-left: 70px;
+  margin: 0;
   padding: 0;
+  margin-left: 70px;
+
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .htmlacademy-link {
   width: 115px;
-  margin-left: 41.5px;
+  margin-left: 41px;
 }
 
 /*visually*/
@@ -297,8 +364,8 @@ body {
 }
 
 .button {
+  display: inline-block;
   font-family: "PT Sans", sans-serif;
-  ;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -328,6 +395,7 @@ body {
 
 .button-hidden {
   background-color: transparent;
+  margin-top: 32px;
 }
 
 /*inner*/
@@ -338,11 +406,17 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #000000;
+  width: 1200px;
+  padding: 35px 0 70px;
 }
 
 .breadcrumbs {
+  display: flex;
+  list-style-type: none;
   width: 114px;
+  margin: 0;
   margin-left: 70px;
+  margin-top: 8px;
   padding: 0;
 }
 
@@ -350,7 +424,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff
+  color: #ffffff;
+  margin-right: 28px;
+}
+
+.breadcrumbs-item {
+  min-width: 13px;
+  min-height: 15px;
 }
 
 .catalog-products-filter-title {
@@ -359,12 +439,15 @@ body {
   line-height: 78px;
   color: #ffffff;
   width: 495px;
+  margin: 0;
   margin-left: 70px;
   padding: 0;
 }
 
 /*filter*/
 .catalog-filter {
+  margin: 0;
+  margin-top: 40px;
   display: flex;
   width: 1060px;
 }
@@ -411,7 +494,9 @@ body {
 
 .button-filter {
   width: 191px;
-  margin: 70px;
+  margin: 0;
+  margin-left: 70px;
+  margin-top: 56px;
   padding: 0;
   flex-shrink: 0;
   display: flex;
@@ -419,6 +504,7 @@ body {
 }
 
 .search-result-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -432,6 +518,8 @@ body {
   width: 1060px;
   display: flex;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 .select-control {
@@ -446,6 +534,22 @@ body {
   padding: 0;
 }
 
+.catalog-view-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-view-item {
+  width: 48px;
+  height: 48px;
+}
+
+.catalog-view-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .product-card {
   background-color: #ffffff;
 }
@@ -455,6 +559,8 @@ body {
   width: 1060px;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
 }
 
 .product-cards {
@@ -499,21 +605,35 @@ body {
 .pagination {
   display: flex;
   width: 400px;
-  justify-content: space-between;
   padding: 0;
+  margin-top: 80px;
+  list-style-type: none;
+  align-items: center;
+
+
 }
 
 .pagination-item {
   width: 60px;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
   color: #ffffff;
   background-color: #82B3D3;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-decoration: none;
 }
 
 .pagination-link-none {
@@ -522,6 +642,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff;
 }
 
 .pagination-link-curren {
@@ -537,9 +658,14 @@ body {
   color: #000000;
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 104px;
 }
 
 .newsletter-title-inner {
+  margin: 0;
+  padding: 0;
+  padding-top: 96px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -549,6 +675,8 @@ body {
 }
 
 .newsletter-description-inner {
+  margin: 0;
+  margin-bottom: 54px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
