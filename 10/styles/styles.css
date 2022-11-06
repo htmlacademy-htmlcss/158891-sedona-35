@@ -486,6 +486,7 @@ body {
 
 .footer-social-link:active {
   fill: rgba(104, 162, 202, 0.3);
+  box-shadow: none;
 }
 
 .htmlacademy-link {
