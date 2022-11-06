@@ -186,6 +186,20 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+  ;
+}
+
+.advantages-title::after {
+  position: absolute;
+  display: block;
+  top: 86px;
+  left: 170px;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #000000;
+  opacity: 30%;
 }
 
 .advantages-item:nth-child(3) {
@@ -217,6 +231,19 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  position: relative;
+}
+
+.advantages-title-img::after {
+  position: absolute;
+  display: block;
+  top: 86px;
+  left: 170px;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 30%;
 }
 
 .advanteges-description-img {
