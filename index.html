@@ -165,6 +165,57 @@
       </section>
     </footer>
   </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="data-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="data-conteiner">
+            <label class="field-group-label">Дата Заезда:</label>
+            <input class="data-form-field field" type="text" name="arrival-date" placeholder="27 апреля 2020">
+          </div>
+          <p class="text-data error-data">Мы не можем отправить вас в прошлое.</p>
+          <div class="data-conteiner">
+            <label class="field-group-label">Дата Выезда:</label>
+            <input class="data-form-field field" type="text" name="departure-date" placeholder="01 сентября 2021">
+          </div>
+          <p class="text-data">На эти даты есть свободные номера. Пока есть.</p>
+        </form>
+        <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="user-conteiner">
+            <label class="field-group-label user-label">Взрослые:</label>
+            <span class="user-box">
+              <button class="user-button minus" type="button"></button>
+              <input class="user-form-field field" type="text" name="departure-date" value="2">
+              <button class="user-button plus" type="button"></button>
+            </span>
+          </div>
+          <div class="user-conteiner">
+            <span class="form-label .form-label-icon">
+              <label class="field-group-label user-label children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-text-label"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-text-label">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18
+                  лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <span class="user-box">
+              <button class="user-button minus" type="button"></button>
+              <input class="user-form-field field" type="text" name="departure-date" value="2">
+              <button class="user-button plus" type="button"></button>
+            </span>
+
+          </div>
+        </form>
+        <button class="modal-button button-blue button" type="submit">Найти</button>
+      </section>
+    </div>
+
+  </div>
 </body>
 
 </html>
