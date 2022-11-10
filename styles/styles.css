@@ -655,11 +655,6 @@ body {
   border-radius: 4px;
 }
 
-.user-form {
-  display: flex;
-  justify-content: space-between;
-}
-
 .user-label {
   margin-right: 46px;
 }
@@ -695,6 +690,7 @@ body {
   display: grid;
   grid-template-columns: 50px 30px 50px;
   margin-left: auto;
+  margin-right: 48px;
 }
 
 .user-button {
@@ -703,37 +699,88 @@ body {
   cursor: pointer;
 }
 
+
+
+.minus::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 48%;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  ;
+}
+
+.minus:hover::after {
+  background-color: #000000;
+}
+
+.minus:focus::after {
+  background-color: #000000;
+}
+
+.minus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
 .minus {
   position: relative;
   border-radius: 4px 0 0 4px;
 }
 
-.plus {
-  position: relative;
-  border-radius: 0 4px 4px 0;
-}
-
-.minus::before {
-  position: absolute;
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: 15px;
-  top: 17px;
+.plus::after {
   content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 48%;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .plus::before {
-  position: absolute;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: 15px;
-  top: 17px;
   content: "";
+  position: absolute;
+  left: 18px;
+  top: 48%;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(90deg);
+}
 
+.plus:hover::after {
+  background-color: #000000;
+}
+
+.plus:hover::before {
+  background-color: #000000;
+}
+
+.plus:focus::after {
+  background-color: #000000;
+}
+
+.plus:focus::before {
+  background-color: #000000;
+}
+
+.plus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
+  ;
+}
+
+.plus:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
+  ;
+}
+
+.plus {
+  position: relative;
+  border-radius: 0 4px 4px 0;
 }
 
 .tooltip-toggle {
@@ -802,10 +849,8 @@ body {
 }
 
 .tooltip {
-  left: 60px;
-  top: 50%;
-  transform: translateY(-50%);
   position: absolute;
+  right: 165px;
   margin-top: 4px;
   width: 26px;
   height: 26px;
