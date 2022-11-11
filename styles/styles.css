@@ -59,7 +59,7 @@ body {
 }
 
 .nav-logo-link:hover{
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .page-header-logo {
@@ -133,7 +133,7 @@ body {
 }
 
 .navigation-link:hover{
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .main-index {
