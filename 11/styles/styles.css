@@ -145,7 +145,7 @@ body {
 .hero {
   padding-top: 51px;
   padding-bottom: 82px;
-  background-image: url("../images/Vector.svg"), url("../images/background/main-background.jpg");
+  background-image: url("../images/vector.svg"), url("../images/background/main-background.jpg");
   background-position: center bottom, center;
   background-size: 100% auto;
   background-repeat: no-repeat;
