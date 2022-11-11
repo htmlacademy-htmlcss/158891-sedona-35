@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -47,7 +48,7 @@
         <h1 class="visually-hidden">Город Седона</h1>
         <img class="wellcome-sedona" src="images/welcome.svg" Width="458" height="352" alt="Добро пожаловать в Седону">
       </section>
-      <h2 class="city">Седона — небольшой городок в Аризоне, аслуживающий большего!</h2>
+      <h2 class="city">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="city-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -75,7 +76,7 @@
           <li class="advantages-item-img">
             <img class="advantages-img" src="images/devil-bridge.jpg" Width="800" height="384" alt="Мост дьявола">
             <div class="img-content">
-              <h3 class="advantages-title-img">Там есть мост дьявола</h3>
+              <h3 class="advantages-title-img">Там есть мост&nbsp;дьявола</h3>
               <p class="advanteges-description-img">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
@@ -86,16 +87,17 @@
         <ul class="services-list">
           <li class="services-item">
             <h3 class="services-title services-title-home">Жильё</h3>
-            <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="services-description">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!
+            </p>
           </li>
           <li class="services-item">
             <h3 class="services-title services-title-food">Еда</h3>
-            <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+            <p class="services-description">Всегда заказывайте топовый&nbsp;фирменный бургер, вы&nbsp;не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
             <h3 class="services-title services-title-souvenirs">Сувениры</h3>
-            <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+            <p class="services-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -114,7 +116,7 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="button button-big button-blue newsletter-button" type="submit">Подписаться</button>
         </form>
@@ -164,6 +166,62 @@
         </a>
       </section>
     </footer>
+  </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="data-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="data-conteiner">
+            <label class="field-group-label">Дата Заезда:</label>
+            <input class="data-form-field field" type="text" name="arrival-date" placeholder="27 апреля 2020">
+            <p class="text-data error-data">Мы не можем отправить вас в прошлое.</p>
+          </div>
+
+          <div class="data-conteiner">
+            <label class="field-group-label">Дата Выезда:</label>
+            <input class="data-form-field field" type="text" name="departure-date" placeholder="1 сентября 2023">
+            <p class="text-data">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+
+          <div class="user-conteiner">
+            <div class="user-groun-adults">
+              <label class="field-group-label user-label">Взрослые:</label>
+              <span class="user-box">
+                <button class="user-button minus" type="button"><span class="visually-hidden">уменьшение количество
+                  людей</span></button>
+                <input class="user-form-field field" type="text" name="departure-date" value="2">
+                <button class="user-button plus" type="button"><span class="visually-hidden">увеличение количество
+                  людей</span></button>
+              </span>
+            </div>
+            <div class="user-groun-children">
+              <span class="form-label form-label-icon">
+                <label class="field-group-label user-label">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle button-blue" type="button"
+                    aria-labelledby="tooltip-text-label"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-text-label">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <span class="user-box">
+                <button class="user-button minus" type="button"><span class="visually-hidden">уменьшение количество
+                    людей</span></button>
+                <input class="user-form-field field" type="text" name="departure-date" value="2">
+                <button class="user-button plus" type="button"><span class="visually-hidden">увеличение количество
+                    людей</span></button>
+              </span>
+            </div>
+          </div>
+          <button class="modal-button button-blue button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 
