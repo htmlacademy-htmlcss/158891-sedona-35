@@ -56,7 +56,10 @@ body {
   padding: 0;
   margin-right: 30px;
   margin-left: 70px;
+}
 
+.nav-logo-link:hover{
+  opacity: 0.3;
 }
 
 .page-header-logo {
@@ -113,7 +116,7 @@ body {
 .navigation-link {
   position: relative;
   display: block;
-  padding: 20px 16px;
+  padding: 20px 15px;
   font-weight: 700;
   font-size: 20px;
   background-color: #FFFFFF;
@@ -127,6 +130,10 @@ body {
   min-width: 20px;
   min-height: 20px;
   padding: 22px 11px;
+}
+
+.navigation-link:hover{
+  opacity: 0.3;
 }
 
 .main-index {
@@ -278,7 +285,8 @@ body {
 
 .services-title {
   position: relative;
-  margin-top: 182px;
+  padding-top: 182px;
+  margin: 0;
   margin-bottom: 30px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -287,22 +295,26 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 0 85px;
 }
 
 .services-item:not(:nth-child(2)) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.services-title::before {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 75px;
+  content: "";
+}
+
 .services-title-home::before {
   position: absolute;
   background-image: url("../images/accommodation.svg");
   background-repeat: no-repeat;
-  left: 50%;
-  margin-left: -35px;
-  width: 75px;
-  height: 72px;
-  bottom: 66px;
   content: "";
 }
 
@@ -310,11 +322,6 @@ body {
   position: absolute;
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
-  left: 50%;
-  margin-left: -35px;
-  width: 75px;
-  height: 72px;
-  bottom: 66px;
   content: "";
 }
 
@@ -322,11 +329,6 @@ body {
   position: absolute;
   background-image: url("../images/souvenirs.svg");
   background-repeat: no-repeat;
-  left: 50%;
-  margin-left: -35px;
-  width: 75px;
-  height: 76px;
-  bottom: 66px;
   content: "";
 }
 
@@ -402,11 +404,13 @@ body {
   width: 452px;
   margin: 0;
   border-radius: 4px 0 0 4px;
-  padding: 14px 20px;
+  padding: 0 19px;
   font: inherit;
+  font-size: 18px;
   border-color: transparent;
   font-weight: 400;
   background-color: #F2F2F2;
+  height: 48px;
 }
 
 .field:active {
@@ -415,8 +419,8 @@ body {
 
 .newsletter-form {
   display: flex;
-  width: 1200px;
-  justify-content: center;
+  width: 684px;
+  margin: 0 auto;
 }
 
 .newsletter-title {
@@ -435,7 +439,7 @@ body {
 
 .newsletter-description {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -475,7 +479,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 45px 0;
 }
 
 .footer-social-list {
@@ -572,12 +576,10 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0px;
-  right: 0px;
+  top: 64px;
+  right: 52px;
   width: 53px;
   height: 53px;
-  margin-top: 54px;
-  margin-right: 42px;
   background-color: #F2F2F2;
   border-radius: 50%;
   border: none;
@@ -603,7 +605,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 48px;
+  margin-bottom: 48px;
   position: relative;
 }
 
@@ -611,20 +613,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 48px;
   position: relative;
 }
 
 .data-form-field {
-
-  width: 400px;
-  padding: 12px 20px;
+  position: relative;
+  width: 360px;
+  padding: 0px 60px 0 20px;
   font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   border-radius: 4px;
+  height: 44px;
+  opacity: 1;
 }
 
 .data-conteiner::before {
@@ -644,28 +647,16 @@ body {
 
 .user-form-field {
   width: 30px;
-  padding: 14px 0px;
+  padding: 0;
   font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  height: 44px;
   color: #000000;
   text-align: center;
   z-index: 1;
   border-radius: 4px;
-}
-
-.user-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.user-label {
-  margin-right: 46px;
-}
-
-.children {
-  padding-right: 36px;
 }
 
 .field-group-label {
@@ -677,9 +668,9 @@ body {
 }
 
 .text-data {
-  padding: 0 20px;
-  margin: 0;
-  margin-left: 137px;
+  position: absolute;
+  top: 35px;
+  left: 157px;
   font: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -691,16 +682,59 @@ body {
   color: #FF5757;
 }
 
+.user-groun-adults {
+  display: flex;
+  width: 247px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.user-groun-children {
+  display: flex;
+  width: 242px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .user-box {
   display: grid;
-  grid-template-columns: 50px 30px 50px;
+  grid-template-columns: 40px 30px 40px;
   margin-left: auto;
+
 }
 
 .user-button {
   border: none;
   background-color: #F2F2F2;
   cursor: pointer;
+  padding: 0;
+}
+
+
+
+.minus::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  ;
+}
+
+.minus:hover::after {
+  background-color: #000000;
+}
+
+.minus:focus::after {
+  background-color: #000000;
+}
+
+.minus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .minus {
@@ -708,32 +742,57 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-.plus {
-  position: relative;
-  border-radius: 0 4px 4px 0;
-}
-
-.minus::before {
-  position: absolute;
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: 15px;
-  top: 17px;
+.plus::after {
   content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .plus::before {
-  position: absolute;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  left: 15px;
-  top: 17px;
   content: "";
+  position: absolute;
+  left: 13px;
+  top: 24px;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  transform: rotate(90deg);
+}
 
+.plus:hover::after {
+  background-color: #000000;
+}
+
+.plus:hover::before {
+  background-color: #000000;
+}
+
+.plus:focus::after {
+  background-color: #000000;
+}
+
+.plus:focus::before {
+  background-color: #000000;
+}
+
+.plus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
+  ;
+}
+
+.plus:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
+  ;
+}
+
+.plus {
+  position: relative;
+  border-radius: 0 4px 4px 0;
 }
 
 .tooltip-toggle {
@@ -765,7 +824,7 @@ body {
 
 .form-label-icon {
   position: relative;
-  padding-right: 26px;
+  padding-right: 36px;
 }
 
 .tooltip-text {
@@ -779,7 +838,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  width: 256px;
+  width: 216px;
   color: #FFFFFF;
   left: 50%;
   transform: translateX(-50%);
@@ -802,10 +861,9 @@ body {
 }
 
 .tooltip {
-  left: 60px;
-  top: 50%;
-  transform: translateY(-50%);
   position: absolute;
+  right: 0;
+  top: 0;
   margin-top: 4px;
   width: 26px;
   height: 26px;
@@ -943,7 +1001,7 @@ body {
 
 .button-hidden {
   background-color: transparent;
-  margin-top: 32px;
+  margin-top: 35px;
   padding: 5px 57px;
 }
 
@@ -1103,7 +1161,7 @@ body {
 }
 
 .catalog-filter-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .catalog-products {
@@ -1137,14 +1195,35 @@ body {
   border-radius: 5px;
 }
 
-.control:active .control-mark {
-  border-color: #83B3D3;
+
+.control:hover .control-mark {
+  opacity: 0.6;
 }
 
 .control-input:focus+.control-mark {
   outline: 2px solid #82B3D3;
 }
 
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control-label:hover {
+  opacity: 0.6;
+}
+
+.control-label:active {
+  opacity: 0.3;
+}
+
+/*
+.control-input:focus+.control-mark {
+  outline: 2px solid #82B3D3;
+}
+.control-input:focus+.control-mark {
+  outline: 2px solid #82B3D3;
+}
+*/
 .control-input[type="checkbox"]:checked+.control-mark::before {
   position: absolute;
   background-image: url("../images/checked.svg");
@@ -1176,6 +1255,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .catalog-filter-price {
@@ -1237,8 +1317,9 @@ body {
 }
 
 .range-input {
-  width: 99px;
-  padding: 12px 20px;
+  width: 100px;
+  height: 44px;
+  padding: 0 20px;
   font: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -1270,7 +1351,7 @@ body {
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 48px;
+  margin-top: 45px;
 
 }
 
@@ -1292,11 +1373,12 @@ body {
 
 .toggle-min {
   top: -8px;
+  left: 2px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -8px;
+  right: -2px;
 }
 
 .range-toggle:active {
@@ -1306,7 +1388,7 @@ body {
 .button-filter {
   width: 191px;
   margin: 0;
-  margin-left: 70px;
+  margin-left: 68px;
   margin-top: 56px;
   padding: 0;
   flex-shrink: 0;
@@ -1333,12 +1415,13 @@ body {
   align-items: center;
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .select-control {
-  padding: 14px 20px;
+  padding: 0px 15px;
   width: 292px;
+  height: 51px;
   margin-left: 200px;
   padding-right: 35px;
   font: inherit;
@@ -1350,7 +1433,7 @@ body {
   border-radius: 4px;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 19px center;
   appearance: none;
 }
 
@@ -1385,28 +1468,28 @@ body {
 .catalog-view-item {
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
 .catalog-view-link {
   position: relative;
   display: block;
-  width: 48px;
-  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 44px;
+  height: 44px;
 }
 
-.catalog-view-item-current {
+.catalog-view-link-current {
   border: 2px solid #000000;
   border-radius: 4px;
 }
 
-.catalog-view-item:hover {
+.catalog-view-link:hover {
   border: 2px solid #000000;
   border-radius: 4px;
 }
 
-.catalog-view-item:active {
+.catalog-view-link:active {
   border: 2px solid #000000;
   border-radius: 4px;
 }
@@ -1442,8 +1525,13 @@ body {
 .product-cards {
   background-color: #ffffff;
   padding: 20px;
+  padding-bottom: 19px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+}
+
+.product-card-image {
+  vertical-align: bottom;
 }
 
 .product-card-content {
@@ -1535,7 +1623,8 @@ body {
   display: flex;
   width: 400px;
   padding: 0;
-  margin-top: 80px;
+  margin: 0;
+  margin-bottom: 60px;
   list-style-type: none;
   align-items: center;
   margin-left: 70px;
