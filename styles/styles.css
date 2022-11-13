@@ -532,15 +532,15 @@ body {
   fill: #83b3d3;
 }
 
-.footer-social-icon:hover {
+.footer-social-link:hover .footer-social-icon {
   fill: #68a2ca;
 }
 
-.footer-social-icon:focus {
+.footer-social-link:focus .footer-social-icon {
   fill: #68a2ca;
 }
 
-.footer-social-icon:active {
+.footer-social-link:active .footer-social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -554,15 +554,15 @@ body {
   fill: #000000;
 }
 
-.htmlacademy-icon:hover {
+.htmlacademy-link:hover .htmlacademy-icon {
   fill: #756157;
 }
 
-.htmlacademy-icon:focus {
+.htmlacademy-link:focus .htmlacademy-icon {
   fill: #756157;
 }
 
-.htmlacademy-icon:active {
+.htmlacademy-link:active .htmlacademy-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1377,6 +1377,8 @@ body {
 
 .range-bar {
   position: absolute;
+  left: 0;
+  width: 226px;
   height: 4px;
   background-color: #ffffff;
 }
