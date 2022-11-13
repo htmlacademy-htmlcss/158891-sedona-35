@@ -147,6 +147,7 @@ body {
   background-position: center bottom, center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #80b3d2;
 }
 
 .city {
@@ -394,7 +395,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #6187a7;
   width: 1200px;
   margin: 0 auto;
   padding-top: 96px;
@@ -408,10 +409,25 @@ body {
   padding: 0 19px;
   font: inherit;
   font-size: 18px;
+  line-height: 24px;
   border-color: transparent;
   font-weight: 400;
   background-color: #f2f2f2;
   height: 48px;
+  color: #000000;
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
 }
 
 .field:active {
@@ -586,6 +602,19 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  opacity: 0.3;
+}
+
 .modal-title {
   font: inherit;
   margin: 0;
@@ -638,10 +667,6 @@ body {
   height: 20px;
   z-index: 1;
   content: "";
-}
-
-.data-form-field::placeholder {
-  color: #000000;
 }
 
 .user-form-field {
@@ -1071,7 +1096,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #5a5a60;
   width: 1200px;
   padding: 35px 0 70px;
 }
@@ -1698,7 +1723,6 @@ body {
 .newsletter-title-inner {
   margin: 0;
   padding: 0 362px;
-  padding-top: 96px;
   margin-bottom: 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
